@@ -2,7 +2,7 @@
 import express from "express";
 import { resolve } from "path";
 
-import './src/database'; // se estiver no mesmo nível de src
+import './src/database/index'; // se estiver no mesmo nível de src
 
 import homeRouter from "./src/routes/homeRoutes.js";
 import userRouter from "./src/routes/userRoutes.js";
