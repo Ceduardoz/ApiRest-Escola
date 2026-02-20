@@ -1,0 +1,21 @@
+# API Escola
+
+Esta é uma API REST para gerenciamento de uma escola, construída com **Node.js**, **Express**, **Sequelize** e **PostgreSQL**.
+O deploy é feito no **Render**, utilizando banco remoto PostgreSQL.
+
+---
+API construida para estudo para para treinamento de criação de crud e integração com o banco. Para ver todo o progresso segue o link: https://github.com/Ceduardoz/JavaScript/tree/main/Udemy/se%C3%A7%C3%A3o11-api-rest/aula106-API
+
+---
+
+## 🚀 Tecnologias
+
+- Node.js
+- Express
+- Sequelize ORM
+- PostgreSQL
+- dotenv (para variáveis de ambiente)
+
+---
+
+## 📦 Estrutura do projeto
