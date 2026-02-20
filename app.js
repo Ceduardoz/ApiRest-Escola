@@ -3,11 +3,11 @@ import { resolve } from "path";
 
 import './database/index.js'; // se estiver no mesmo nível de src
 
-import homeRouter from "./src/routes/homeRoutes.js";
-import userRouter from "./src/routes/userRoutes.js";
-import tokenRouter from "./src/routes/tokenRoutes.js";
-import alunoRouter from "./src/routes/alunoRoutes.js";
-import photoRouter from "./src/routes/photoRoutes.js";
+import homeRouter from "./routes/homeRoutes.js";
+import userRouter from "./routes/userRoutes.js";
+import tokenRouter from "./routes/tokenRoutes.js";
+import alunoRouter from "./routes/alunoRoutes.js";
+import photoRouter from "./routes/photoRoutes.js";
 
 class App {
   constructor() {
