@@ -1,7 +1,6 @@
-import dotenv from 'dotenv';
-dotenv.config();
+require('dotenv').config();
 
-export default {
+module.exports = {
   dialect: 'postgres',
   url: process.env.DATABASE_URL,
   define: {
@@ -14,7 +13,7 @@ export default {
   dialectOptions: {
     ssl: {
       require: true,
-      rejectUnauthorized: false, // permite SSL auto-assinado do Render
+      rejectUnauthorized: false,
     },
     timezone: 'America/Sao_Paulo',
   },
