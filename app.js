@@ -1,13 +1,13 @@
 import express from "express";
 import { resolve } from "path";
 
-import './src/database/index.js'; // se estiver no mesmo nível de src
+import './database/index.js';
 
-import homeRouter from "./src/routes/homeRoutes.js";
-import userRouter from "./src/routes/userRoutes.js";
-import alunoRouter from "./src/routes/alunoRoutes.js";
-import photoRouter from "./src/routes/photoRoutes.js";
-import tokenRouter from "./src/routes/tokenRoutes.js";
+import homeRouter from "./routes/homeRoutes.js";
+import userRouter from "./routes/userRoutes.js";
+import alunoRouter from "./routes/alunoRoutes.js";
+import photoRouter from "./routes/photoRoutes.js";
+import tokenRouter from "./routes/tokenRoutes.js";
 
 class App {
   constructor() {
@@ -19,7 +19,7 @@ class App {
   middleware() {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
-    this.app.use(express.static(resolve(__dirname, "uploads")));
+    this.app.use(express.static(resolve("uploads")));
   }
 
   routes() {
