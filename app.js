@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import './src/database.js';
+import './src/database/index.js';
 
 import express from "express";
 import { resolve } from "path";
