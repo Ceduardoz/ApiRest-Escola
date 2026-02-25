@@ -1,17 +1,17 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import './src/database';
+import './src/database.js';
 
 import express from "express";
 import { resolve } from "path";
 import cors from "cors";
 
-import homeRouter from "./src/routes/homeRoutes";
-import userRouter from "./src/routes/userRoutes";
-import tokenRouter from "./src/routes/tokenRoutes";
-import alunoRouter from "./src/routes/alunoRoutes";
-import photoRouter from "./src/routes/photoRoutes";
+import homeRouter from "./src/routes/homeRoutes.js";
+import userRouter from "./src/routes/userRoutes.js";
+import tokenRouter from "./src/routes/tokenRoutes.js";
+import alunoRouter from "./src/routes/alunoRoutes.js";
+import photoRouter from "./src/routes/photoRoutes.js";
 class App {
   constructor(){
     this.app = express();
