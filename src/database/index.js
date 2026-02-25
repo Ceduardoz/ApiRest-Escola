@@ -6,7 +6,7 @@ import Photo from '../models/Photo';
 
 const models = [Aluno, User, Photo];
 
-const connection = new Sequelize(databaseConfig); 
+const connection = new Sequelize(process.env.DATABASE_URL, databaseConfig);
 
 models.forEach((model) => model.init(connection));
 models.forEach((model) => model.associate && model.associate(connection.models));

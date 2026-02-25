@@ -1,6 +1,11 @@
-class HomeController{
+class HomeController {
   async index(req, res) {
-    res.json("Index");
+    return res.json({
+      ok: true,
+      service: 'API REST Escola',
+      status: 'running',
+      timestamp: new Date().toISOString(),
+    });
   }
 }
 
